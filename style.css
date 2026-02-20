@@ -12,17 +12,11 @@
 /* ============================= */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #000;
+    background: #111;  /* lighter than pure black */
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-/* ============================= */
-/* SCROLLABLE HEIGHT */
-/* ============================= */
-body {
-    height: 400vh; /* important for scroll animation */
+    height: 400vh; /* needed for scroll animation */
 }
 
 /* ============================= */
@@ -37,36 +31,27 @@ canvas {
 
     z-index: -2;
 
-    /* Better visibility */
-    opacity: 0.5;
-    filter: brightness(1.25) contrast(1.1);
+    /* Make animation CLEAR */
+    opacity: 0.7;   /* increased visibility */
+    filter: brightness(1.4) contrast(1.15);
 }
 
 /* ============================= */
-/* OVERLAY FOR READABILITY */
+/* REMOVE DARK OVERLAY */
 /* ============================= */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-
-    z-index: -1;
-
-    /* Very light dark tint */
-    background: rgba(0, 0, 0, 0.12);
+    display: none;   /* completely remove darkness layer */
 }
 
 /* ============================= */
-/* MAIN CONTENT CONTAINER */
+/* CONTENT */
 /* ============================= */
 .container {
     position: relative;
     z-index: 1;
     max-width: 900px;
     margin: auto;
-    padding: 60px 30px;
+    padding: 80px 30px;
 }
 
 /* ============================= */
@@ -74,7 +59,7 @@ canvas {
 /* ============================= */
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 header h1 {
@@ -83,74 +68,31 @@ header h1 {
     letter-spacing: 2px;
 }
 
-header p {
-    font-size: 18px;
-    margin-top: 10px;
-    opacity: 0.85;
-}
-
 /* ============================= */
-/* SECTION */
+/* SECTIONS */
 /* ============================= */
 section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     padding: 30px;
     border-radius: 12px;
 
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
+    /* Light glass instead of dark */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
 }
 
-/* Section headings */
+/* Headings */
 section h2 {
     margin-bottom: 15px;
     font-size: 22px;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.4);
     padding-bottom: 8px;
 }
 
-/* ============================= */
-/* LISTS */
-/* ============================= */
 ul {
     padding-left: 20px;
 }
 
 li {
     margin-bottom: 8px;
-}
-
-/* ============================= */
-/* PROJECT BLOCK */
-/* ============================= */
-.project {
-    margin-bottom: 15px;
-}
-
-/* ============================= */
-/* CONTACT INFO */
-/* ============================= */
-.contact {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-/* ============================= */
-/* RESPONSIVE */
-/* ============================= */
-@media (max-width: 768px) {
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 40px 20px;
-    }
 }
