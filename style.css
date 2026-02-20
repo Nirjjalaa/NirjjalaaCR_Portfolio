@@ -1,98 +1,113 @@
-/* ============================= */
 /* RESET */
-/* ============================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ============================= */
-/* BODY */
-/* ============================= */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #111;  /* lighter than pure black */
-    color: #ffffff;
-    line-height: 1.6;
+    background: #111;
+    color: #fff;
     overflow-x: hidden;
-    height: 400vh; /* needed for scroll animation */
+    height: 450vh;
 }
 
-/* ============================= */
 /* CANVAS BACKGROUND */
-/* ============================= */
 canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: -1;
 
-    z-index: -2;
-
-    /* Make animation CLEAR */
-    opacity: 0.85; 
-    filter: brightness(1.5) contrast(1.15);/* increased visibility */
+    opacity: 0.85;
+    filter: brightness(1.5) contrast(1.15);
 }
 
-/* ============================= */
-/* REMOVE DARK OVERLAY */
-/* ============================= */
-.overlay {
-    display: none;   /* completely remove darkness layer */
-}
-
-/* ============================= */
-/* CONTENT */
-/* ============================= */
+/* CONTAINER */
 .container {
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding: 80px 30px;
+    padding: 100px 20px;
 }
 
-/* ============================= */
-/* HEADER */
-/* ============================= */
-header {
+/* HERO */
+.hero {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
 
-header h1 {
-    font-size: 42px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-/* ============================= */
-/* SECTIONS */
-/* ============================= */
-section {
-    margin-bottom: 60px;
-    padding: 30px;
-    border-radius: 12px;
+.subtitle {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
 
-    /* Light glass instead of dark */
+.contact-top span {
+    display: block;
+    opacity: 0.8;
+    margin: 5px 0;
+}
+
+/* CARD STYLE */
+.card {
+    margin-bottom: 80px;
+    padding: 35px;
+    border-radius: 18px;
     background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
 }
 
-/* Headings */
-section h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
     border-bottom: 2px solid rgba(255,255,255,0.4);
     padding-bottom: 8px;
 }
 
-ul {
+.sub-heading {
+    margin-top: 30px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    margin: 8px 10px 8px 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    font-size: 14px;
+}
+
+/* PROJECT */
+.project {
+    margin-bottom: 20px;
+}
+
+/* TIMELINE ITEMS */
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+/* CERTIFICATIONS */
+.cert-list {
     padding-left: 20px;
 }
 
-li {
-    margin-bottom: 8px;
+.cert-list li {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
 }
