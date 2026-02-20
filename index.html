@@ -3,227 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nirjjalaa C R | Portfolio</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0d0d0d;
-    color: #ffffff;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-/* ===== Scrollable Height ===== */
-body {
-    height: 500vh;
-}
-
-/* ===== Canvas Background ===== */
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -2;
-    opacity: 0.35;   /* watermark effect */
-}
-
-/* Dark overlay for readability */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.65);
-    z-index: -1;
-}
-
-/* ===== Content Styling ===== */
-.container {
-    width: 85%;
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 100px;
-}
-
-section {
-    margin-bottom: 120px;
-}
-
-h1 {
-    font-size: 42px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    border-left: 4px solid #00bfff;
-    padding-left: 10px;
-}
-
-p, li {
-    font-size: 16px;
-    color: #e0e0e0;
-}
-
-ul {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.header {
-    margin-bottom: 40px;
-}
-
-.contact {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #cccccc;
-}
-
-.highlight {
-    color: #00bfff;
-}
-
-</style>
+<title>Nirjjalaa | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <canvas id="animationCanvas"></canvas>
-<div class="overlay"></div>
 
 <div class="container">
 
-<section class="header">
-<h1>NIRJJALAA C R</h1>
-<div class="contact">
-📞 9080102627 | 📧 nirjjalaanirjjalaa@gmail.com <br>
-📍 Kanyakumari, Tamil Nadu
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Nirjjalaa C R</h1>
+        <p class="subtitle">
+            Electronics & Communication Engineer | IoT & Embedded Systems Enthusiast
+        </p>
+        <div class="contact-top">
+            <span>📍 Kanyakumari, Tamil Nadu</span>
+            <span>📞 9080102627</span>
+            <span>📧 nirjjalaanirjjalaa@gmail.com</span>
+        </div>
+    </section>
+
+    <!-- OBJECTIVE -->
+    <section class="card">
+        <h2>Career Objective</h2>
+        <p>
+            3rd-year Electronics and Communication Engineering student (CGPA: 8.64/10)
+            with hands-on experience in IoT, embedded systems, and Python, including
+            a 6-week IoT internship at Adaovi developing hardware–software integrated
+            prototypes. Seeking an entry-level role to apply real-time IoT solutions
+            and strengthen embedded systems development skills.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+            <h3>B.E. Electronics & Communication (2023–2027)</h3>
+            <p>Government College of Engineering, Tirunelveli</p>
+            <p>CGPA: 8.64/10</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>HSC (2023)</h3>
+            <p>St. Joseph's Convent Higher Secondary School</p>
+            <p>92%</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Arduino</span>
+            <span>Ultrasonic Sensor</span>
+            <span>Gas Sensor</span>
+            <span>ThingsBoard</span>
+            <span>Tinkercad</span>
+        </div>
+
+        <h2 class="sub-heading">Soft Skills</h2>
+        <div class="skills">
+            <span>Communication</span>
+            <span>Analytical Thinking</span>
+            <span>Problem Solving</span>
+            <span>Team Collaboration</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Gas Leakage Detection System</h3>
+            <p>
+                Designed an Arduino-based gas detection system with buzzer alerts
+                and automatic gas shut-off mechanism.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>AQI Sensor Dashboard using Python</h3>
+            <p>
+                Simulated air quality data and visualized it in real time
+                using ThingsBoard IoT dashboard.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Ultrasonic Distance Measurement System</h3>
+            <p>
+                Built a prototype using ultrasonic sensor, LCD, and buzzer
+                for safe distance alerting. Simulated successfully in Tinkercad.
+            </p>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP -->
+    <section class="card">
+        <h2>Internship Experience</h2>
+
+        <div class="timeline-item">
+            <h3>IoT Intern – Adaovi</h3>
+            <p>Sep 2024 – Oct 2024</p>
+            <p>
+                Implemented sensor integration (gas, distance, AQI)
+                and real-time data streaming.
+            </p>
+        </div>
+    </section>
+
+    <!-- ADDITIONAL EXPERIENCE -->
+    <section class="card">
+        <h2>Additional Experience</h2>
+        <div class="timeline-item">
+            <h3>Green Internship Programme</h3>
+            <p>
+                Worked on an environment-focused project involving data collection,
+                analysis, and reporting. Gained experience in sustainability concepts,
+                teamwork, and documentation.
+            </p>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="card">
+        <h2>Certifications & Virtual Experience</h2>
+        <ul class="cert-list">
+            <li>Tata Group – Data Visualization Virtual Experience (Forage)</li>
+            <li>Deloitte – Data Analysis Virtual Experience (Forage)</li>
+        </ul>
+    </section>
+
 </div>
-</section>
 
-<section>
-<h2>Objective</h2>
-<p>
-3rd-year Electronics and Communication Engineering student (CGPA: <span class="highlight">8.64/10</span>) with hands-on experience in IoT, embedded systems, and Python, including a 6-week IoT internship at Adaovi developing hardware–software integrated prototypes. Seeking an entry-level role to apply real-time IoT solutions and strengthen embedded systems development skills.
-</p>
-</section>
-
-<section>
-<h2>Education</h2>
-<p><strong>B.E., Electronics & Communication (2023–2027)</strong><br>
-Government College of Engineering, Tirunelveli<br>
-CGPA: 8.64/10</p>
-
-<br>
-
-<p><strong>HSC (2023)</strong><br>
-St. Joseph's Convent Higher Secondary School<br>
-92%</p>
-</section>
-
-<section>
-<h2>Technical Skills</h2>
-<ul>
-<li><strong>Programming:</strong> Python, C, C++</li>
-<li><strong>Embedded Systems:</strong> Arduino, Ultrasonic Sensor, Gas Sensor</li>
-<li><strong>Tools:</strong> Tinkercad, ThingsBoard</li>
-</ul>
-</section>
-
-<section>
-<h2>Projects</h2>
-<ul>
-<li><strong>Gas Leakage Detection System:</strong> Arduino-based gas detection system with buzzer alerts and automatic gas shut-off mechanism.</li>
-<li><strong>AQI Sensor Dashboard using Python:</strong> Simulated air quality data and visualized it in real-time using ThingsBoard IoT dashboard.</li>
-<li><strong>Ultrasonic Distance Measurement System:</strong> Built prototype using ultrasonic sensor, LCD, and buzzer. Simulated in Tinkercad.</li>
-</ul>
-</section>
-
-<section>
-<h2>Internship Experience</h2>
-<p><strong>IoT Intern – Adaovi</strong> (Sep 2024 – Oct 2024)</p>
-<ul>
-<li>Implemented sensor integration (gas, distance, AQI).</li>
-<li>Worked on real-time data streaming and hardware-software integration.</li>
-</ul>
-</section>
-
-<section>
-<h2>Additional Experience</h2>
-<p><strong>Green Internship Programme</strong></p>
-<ul>
-<li>Environment-focused project involving data collection, analysis, and reporting.</li>
-<li>Gained experience in sustainability concepts and teamwork.</li>
-</ul>
-</section>
-
-<section>
-<h2>Certifications</h2>
-<ul>
-<li>Tata Group – Data Visualization Virtual Experience (Forage)</li>
-<li>Deloitte – Data Analysis Virtual Experience (Forage)</li>
-</ul>
-</section>
-
-</div>
-
-<script>
-const canvas = document.getElementById("animationCanvas");
-const context = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const frameCount = 240;
-const images = [];
-
-function currentFrame(index) {
-    return "frames/ezgif-frame-" + String(index + 1).padStart(3, '0') + ".jpg";
-}
-
-for (let i = 0; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-    images.push(img);
-}
-
-function render(index) {
-    const img = images[index];
-    if (!img.complete) return;
-
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(img, 0, 0, canvas.width, canvas.height);
-}
-
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
-    const scrollFraction = scrollTop / maxScroll;
-
-    const frameIndex = Math.min(
-        frameCount - 1,
-        Math.floor(scrollFraction * frameCount)
-    );
-
-    render(frameIndex);
-});
-
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
