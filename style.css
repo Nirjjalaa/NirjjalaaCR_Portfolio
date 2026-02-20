@@ -32,8 +32,8 @@ canvas {
     z-index: -2;
 
     /* Make animation CLEAR */
-    opacity: 0.7;   /* increased visibility */
-    filter: brightness(1.4) contrast(1.15);
+    opacity: 0.85; 
+    filter: brightness(1.5) contrast(1.15);/* increased visibility */
 }
 
 /* ============================= */
